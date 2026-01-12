@@ -1,9 +1,14 @@
 import matplotlib.pyplot as plt
 
-squares = [1,4,9,16,25,36]
+plt.style.use('seaborn-v0_8')
+input_values = [1,2,3,4,5]
+
+squares = [1,4,9,16,25]
+
+
 fig , ax = plt.subplots()  # Fig Variable represents the collection of plots in a label & ax variable each plot
 
-ax.plot(squares , linewidth = 3)
+ax.plot(input_values , squares , linewidth = 3)
 
 ax.set_title("Square Numbers" , fontsize = 24)
 ax.set_xlabel("Value" , fontsize = 14)
