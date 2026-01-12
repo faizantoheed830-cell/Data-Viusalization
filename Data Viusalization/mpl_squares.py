@@ -9,7 +9,7 @@ squares = [1,4,9,16,25]
 fig , ax = plt.subplots()  # Fig Variable represents the collection of plots in a label & ax variable each plot
 
 ax.plot(input_values , squares , linewidth = 3)
-
+ax.scatter(2,4, s=200)
 ax.set_title("Square Numbers" , fontsize = 24)
 ax.set_xlabel("Value" , fontsize = 14)
 ax.set_ylabel("Square of value" , fontsize = 14)
